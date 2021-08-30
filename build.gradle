@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 
 group = 'com.withertech'
 version = '1.0.0'
-archivesBaseName = 'testmod'
+archivesBaseName = 'endgateway'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8) // Mojang ships Java 8 to end users, so your mod should target Java 8.
 
@@ -96,7 +96,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'testmod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'endgateway', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
                 testmod {
